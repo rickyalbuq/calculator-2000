@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta author="Henrique Albuquerque">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Calculator 2000</title>
+
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="display.css">
+  <link rel="stylesheet" href="keypad.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Gurajada&family=Khand&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="display.js" defer></script>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="header">
+        <h1>Calculator 2000</h1>
+        <p>by RickyAlbuq</p>
+      </div>
+      <div class="solarCell">
+        <div class="verticalBar"></div>
+        <div class="verticalBar"></div>
+        <div class="verticalBar"></div>
+      </div>
+    </header>
+    <div class="displayBorder">
+      <div class="displayBackground">
+        <div class="display">
+          <div class="digits">
+            <div id="digit-8" class="digit">
+              <div id="d8-segment-1" class="segment-1"></div>
+              <div id="d8-segment-2" class="segment-2"></div>
+              <div id="d8-segment-3" class="segment-3"></div>
+              <div id="d8-segment-4" class="segment-4"></div>
+              <div id="d8-segment-5" class="segment-5"></div>
+              <div id="d8-segment-6" class="segment-6"></div>
+              <div id="d8-segment-7" class="segment-7"></div>
+            </div>
+            <div id="digit-7" class="digit">
+              <div id="d7-segment-1" class="segment-1"></div>
+              <div id="d7-segment-2" class="segment-2"></div>
+              <div id="d7-segment-3" class="segment-3"></div>
+              <div id="d7-segment-4" class="segment-4"></div>
+              <div id="d7-segment-5" class="segment-5"></div>
+              <div id="d7-segment-6" class="segment-6"></div>
+              <div id="d7-segment-7" class="segment-7"></div>
+            </div>
+            <div id="digit-6" class="digit">
+              <div id="d6-segment-1" class="segment-1"></div>
+              <div id="d6-segment-2" class="segment-2"></div>
+              <div id="d6-segment-3" class="segment-3"></div>
+              <div id="d6-segment-4" class="segment-4"></div>
+              <div id="d6-segment-5" class="segment-5"></div>
+              <div id="d6-segment-6" class="segment-6"></div>
+              <div id="d6-segment-7" class="segment-7"></div>
+            </div>
+            <div id="digit-5" class="digit">
+              <div id="d5-segment-1" class="segment-1"></div>
+              <div id="d5-segment-2" class="segment-2"></div>
+              <div id="d5-segment-3" class="segment-3"></div>
+              <div id="d5-segment-4" class="segment-4"></div>
+              <div id="d5-segment-5" class="segment-5"></div>
+              <div id="d5-segment-6" class="segment-6"></div>
+              <div id="d5-segment-7" class="segment-7"></div>
+            </div>
+            <div id="digit-4" class="digit">
+              <div id="d4-segment-1" class="segment-1"></div>
+              <div id="d4-segment-2" class="segment-2"></div>
+              <div id="d4-segment-3" class="segment-3"></div>
+              <div id="d4-segment-4" class="segment-4"></div>
+              <div id="d4-segment-5" class="segment-5"></div>
+              <div id="d4-segment-6" class="segment-6"></div>
+              <div id="d4-segment-7" class="segment-7"></div>
+            </div>
+            <div id="digit-3" class="digit">
+              <div id="d3-segment-1" class="segment-1"></div>
+              <div id="d3-segment-2" class="segment-2"></div>
+              <div id="d3-segment-3" class="segment-3"></div>
+              <div id="d3-segment-4" class="segment-4"></div>
+              <div id="d3-segment-5" class="segment-5"></div>
+              <div id="d3-segment-6" class="segment-6"></div>
+              <div id="d3-segment-7" class="segment-7"></div>
+            </div>
+            <div id="digit-2" class="digit">
+              <div id="d2-segment-1" class="segment-1"></div>
+              <div id="d2-segment-2" class="segment-2"></div>
+              <div id="d2-segment-3" class="segment-3"></div>
+              <div id="d2-segment-4" class="segment-4"></div>
+              <div id="d2-segment-5" class="segment-5"></div>
+              <div id="d2-segment-6" class="segment-6"></div>
+              <div id="d2-segment-7" class="segment-7"></div>
+            </div>
+            <div id="digit-1" class="digit">
+              <div id="d1-segment-1" class="segment-1"></div>
+              <div id="d1-segment-2" class="segment-2"></div>
+              <div id="d1-segment-3" class="segment-3"></div>
+              <div id="d1-segment-4" class="segment-4"></div>
+              <div id="d1-segment-5" class="segment-5"></div>
+              <div id="d1-segment-6" class="segment-6"></div>
+              <div id="d1-segment-7" class="segment-7"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="keypad">
+      <div id="key-7" class="key"><p>7</p></div>
+      <div id="key-8" class="key"><p>8</p></div>
+      <div id="key-9" class="key"><p>9</p></div>
+      <div id="key-clear" class="key"><p>CE</p></div>
+      <div id="key-4" class="key"><p>4</p></div>
+      <div id="key-5" class="key"><p>5</p></div>
+      <div id="key-6" class="key"><p>6</p></div>
+      <div id="key-sub" class="key"><p>-</p></div>
+      <div id="key-1" class="key"><p>1</p></div>
+      <div id="key-2" class="key"><p>2</p></div>
+      <div id="key-3" class="key"><p>3</p></div>
+      <div id="key-add" class="key"><p>+</p></div>
+      <div id="key-0" class="key"><p>0</p></div>
+      <div id="key-equal" class="key"><p>=</p></div>
+    </div>
+  </main>
+</body>
+</html>
